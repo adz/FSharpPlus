@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Option</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Additional operations on Option</p>
@@ -54,36 +57,110 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '289', 289)" onmouseover="showTip(event, '289', 289)">
-            apply(f x)
+          <code onmouseout="hideTip(event, '407', 407)" onmouseover="showTip(event, '407', 407)">
+            Option.apply f x
           </code>
-          <div class="tip" id="289">
-            <strong>Signature:</strong> f:(&#39;a -&gt; &#39;b) option -&gt; x:&#39;a option -&gt; &#39;b option<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+          <div class="tip" id="407">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U) option -&gt; x:&#39;T option -&gt; &#39;U option<br />
+                          <strong>Type parameters:</strong> 'T, 'U                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L12-12" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L10-10" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>If both value are Some, returns the result of applying the second value to the first one. Otherwise it returns None.</p>
+          <p>Applies an option value to an option function.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '290', 290)" onmouseover="showTip(event, '290', 290)">
-            unzip(v)
+          <code onmouseout="hideTip(event, '408', 408)" onmouseover="showTip(event, '408', 408)">
+            Option.ofResult(source)
           </code>
-          <div class="tip" id="290">
-            <strong>Signature:</strong> v:(&#39;a * &#39;b) option -&gt; &#39;a option * &#39;b option<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+          <div class="tip" id="408">
+            <strong>Signature:</strong> source:Result&lt;&#39;T,&#39;Error&gt; -&gt; &#39;T option<br />
+                          <strong>Type parameters:</strong> 'T, 'Error                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L20-20" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L47-47" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Converts a Result to an option.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '409', 409)" onmouseover="showTip(event, '409', 409)">
+            Option.protect f x
+          </code>
+          <div class="tip" id="409">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U) -&gt; x:&#39;T -&gt; &#39;U option<br />
+                          <strong>Type parameters:</strong> 'T, 'U                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L50-50" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates a safe version of the supplied function, which returns an option<'U> instead of throwing exceptions.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '410', 410)" onmouseover="showTip(event, '410', 410)">
+            Option.toResult(source)
+          </code>
+          <div class="tip" id="410">
+            <strong>Signature:</strong> source:&#39;T option -&gt; Result&lt;&#39;T,unit&gt;<br />
+                          <strong>Type parameters:</strong> 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L35-35" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Converts an option to a Result.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '411', 411)" onmouseover="showTip(event, '411', 411)">
+            Option.toResultWith errorValue source
+          </code>
+          <div class="tip" id="411">
+            <strong>Signature:</strong> errorValue:&#39;Error -&gt; source:&#39;T option -&gt; Result&lt;&#39;T,&#39;Error&gt;<br />
+                          <strong>Type parameters:</strong> 'Error, 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L41-41" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Converts an option to a Result.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '412', 412)" onmouseover="showTip(event, '412', 412)">
+            Option.unzip(v)
+          </code>
+          <div class="tip" id="412">
+            <strong>Signature:</strong> v:(&#39;T * &#39;U) option -&gt; &#39;T option * &#39;U option<br />
+                          <strong>Type parameters:</strong> 'T, 'U                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L18-18" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -94,16 +171,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '291', 291)" onmouseover="showTip(event, '291', 291)">
-            zip(x y)
+          <code onmouseout="hideTip(event, '413', 413)" onmouseover="showTip(event, '413', 413)">
+            Option.zip x y
           </code>
-          <div class="tip" id="291">
-            <strong>Signature:</strong> x:&#39;a option -&gt; y:&#39;b option -&gt; (&#39;a * &#39;b) option<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+          <div class="tip" id="413">
+            <strong>Signature:</strong> x:&#39;T option -&gt; y:&#39;U option -&gt; (&#39;T * &#39;U) option<br />
+                          <strong>Type parameters:</strong> 'T, 'U                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L29-29" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Option.fs#L27-27" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -132,6 +208,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

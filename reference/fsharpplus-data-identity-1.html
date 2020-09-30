@@ -33,11 +33,15 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Identity<'t></h1>
 <p>
-  <span>Namespace: FSharpPlus.Data</span><br />
+
+    <span>Namespace: FSharpPlus.Data</span><br />
+            <span>
+            Attributes: <br />
+[&lt;Struct&gt;]<br />
+            
+        </span>
 </p>
 <div class="xmldoc">
 <p>Computation type: Simple function application.
@@ -59,16 +63,15 @@ Its applicative instance plays a fundamental role in Lens.</p>
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1605', 1605)" onmouseover="showTip(event, '1605', 1605)">
+          <code onmouseout="hideTip(event, '2599', 2599)" onmouseover="showTip(event, '2599', 2599)">
             Identity(&#39;t)
           </code>
-          <div class="tip" id="1605">
+          <div class="tip" id="2599">
             <strong>Signature:</strong> &#39;t<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Identity.fs#L16-16" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L13-13" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -85,16 +88,15 @@ Its applicative instance plays a fundamental role in Lens.</p>
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1606', 1606)" onmouseover="showTip(event, '1606', 1606)">
-            ( &lt;*&gt; )(arg1, arg2)
+          <code onmouseout="hideTip(event, '2600', 2600)" onmouseover="showTip(event, '2600', 2600)">
+            Identity.( &lt;*&gt; )(arg1, arg2)
           </code>
-          <div class="tip" id="1606">
+          <div class="tip" id="2600">
             <strong>Signature:</strong> (Identity&lt;(&#39;T -&gt; &#39;U)&gt; * Identity&lt;&#39;T&gt;) -&gt; Identity&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'U          </div>
+                          <strong>Type parameters:</strong> 'U                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Identity.fs#L19-19" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L16-16" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -104,16 +106,15 @@ Its applicative instance plays a fundamental role in Lens.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1607', 1607)" onmouseover="showTip(event, '1607', 1607)">
-            ( &gt;&gt;= )(arg1, f)
+          <code onmouseout="hideTip(event, '2601', 2601)" onmouseover="showTip(event, '2601', 2601)">
+            Identity.( &gt;&gt;= )(arg1, f)
           </code>
-          <div class="tip" id="1607">
+          <div class="tip" id="2601">
             <strong>Signature:</strong> (Identity&lt;&#39;T&gt; * f:(&#39;T -&gt; Identity&lt;&#39;U&gt;)) -&gt; Identity&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'U          </div>
+                          <strong>Type parameters:</strong> 'U                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Identity.fs#L18-18" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L15-15" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -123,16 +124,15 @@ Its applicative instance plays a fundamental role in Lens.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1608', 1608)" onmouseover="showTip(event, '1608', 1608)">
-            Map(arg1, f)
+          <code onmouseout="hideTip(event, '2602', 2602)" onmouseover="showTip(event, '2602', 2602)">
+            Identity.Lift2(f, arg2, arg3)
           </code>
-          <div class="tip" id="1608">
-            <strong>Signature:</strong> (Identity&lt;&#39;T&gt; * f:(&#39;T -&gt; &#39;U)) -&gt; Identity&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'U          </div>
+          <div class="tip" id="2602">
+            <strong>Signature:</strong> (f:(&#39;T -&gt; &#39;U -&gt; &#39;V) * Identity&lt;&#39;T&gt; * Identity&lt;&#39;U&gt;) -&gt; Identity&lt;&#39;V&gt;<br />
+                          <strong>Type parameters:</strong> 'U, 'V                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Identity.fs#L20-20" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L17-17" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -141,16 +141,49 @@ Its applicative instance plays a fundamental role in Lens.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1609', 1609)" onmouseover="showTip(event, '1609', 1609)">
-            Return(x)
+          <code onmouseout="hideTip(event, '2603', 2603)" onmouseover="showTip(event, '2603', 2603)">
+            Identity.Map(arg1, f)
           </code>
-          <div class="tip" id="1609">
-            <strong>Signature:</strong> x:&#39;T -&gt; Identity&lt;&#39;T&gt;<br />
-                      </div>
+          <div class="tip" id="2603">
+            <strong>Signature:</strong> (Identity&lt;&#39;T&gt; * f:(&#39;T -&gt; &#39;U)) -&gt; Identity&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'U                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Identity.fs#L17-17" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L18-18" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2604', 2604)" onmouseover="showTip(event, '2604', 2604)">
+            Identity.Return(x)
+          </code>
+          <div class="tip" id="2604">
+            <strong>Signature:</strong> x:&#39;T -&gt; Identity&lt;&#39;T&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L14-14" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2605', 2605)" onmouseover="showTip(event, '2605', 2605)">
+            Identity.Zip(arg1, arg2)
+          </code>
+          <div class="tip" id="2605">
+            <strong>Signature:</strong> (Identity&lt;&#39;T&gt; * Identity&lt;&#39;U&gt;) -&gt; Identity&lt;&#39;T * &#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'U                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Identity.fs#L19-19" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -177,6 +210,7 @@ Its applicative instance plays a fundamental role in Lens.</p>
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

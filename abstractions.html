@@ -1,69 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Abstractions
-</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="F#+ is a base library for F#."/>
-    <meta name="author" content="Gusty"/>
-
-    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
-
-    <link type="text/css" rel="stylesheet" href="/FSharpPlus/content/style.css" />
-    <script type="text/javascript" src="/FSharpPlus/content/tips.js"></script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="container">
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
-        </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="span9" id="main">
-          
-<h1><a name="Abstractions" class="anchor" href="#Abstractions">Abstractions</a></h1>
+<html lang="en"><head><meta charset="utf-8" /><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="F#+ is a base library for F#." /><meta name="author" content="Gusty" /><script src="https://code.jquery.com/jquery-1.8.0.js"></script><script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script><script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script><link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet" /><link type="text/css" rel="stylesheet" href="./content/style.css" /><script type="text/javascript" src="./content/tips.js"></script></head><body><div class="container"><div class="masthead"><ul class="nav nav-pills pull-right"><li><a href="http://fsharp.org">fsharp.org</a></li><li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li></ul><h3 class="muted"><a href="./index.html">FSharpPlus</a></h3></div><hr /><div class="row"><div class="span9" id="main"><h1><a name="Abstractions" class="anchor" href="#Abstractions">Abstractions</a></h1>
 <p>The following diagram illustrates some common FP abstractions that can be represented with this library and the relationships between them.</p>
 <p>Click on the abstraction name for a full description:</p>
-<object style="width: 100%" data="//www.plantuml.com/plantuml/svg/pLZRRjis6BwU0Ry30G51Sx23xN98Z6RP0XHeWABENP4BMg9ajXIfabGILycJzMAFj5VOpuCaIdOCJFBMtTayVDz_uizF_Elxds-LnbANEPjEr1VA2onnZjH3zZlD2LTKyANUC89Ip1IPJgOJBJAYrqIYQZhv2Q-KbZZMA6POARGaESsaA0lqwTDQw-BNy_DK5L9y9h5MyupgTRcQKt5-irnZMNnWfJgl4O1efkhjyxNEsVszfK3e5BqvFKPFQ0Eeus6Z0kPHTLKKX2SAwKU1cWNg1TtVtmFfY_6qxzsro0N7oJ3VOhUvxnbvSWnF0tqBOICFvbomSRjSB8wHGXbwDapWiFrp62f0gvakBprXKXQCnbWJzEIYQ0FPY-Eju88E36DkzmPHDApVY1G3dGhm8WjJlKi8rrHlK2gaAJnV4kFBCAJgrk1Aw3LoqwgXCp4rf4loTQxAV725XBG6fxfXM4Fo48Qw_reI7XCaqXwzJTjMucvA7ck8oY0xKhUvbxeS5oWTx5k86HcewZrDDNXc9s05ebmB-EyjtmfkoR_HmjJghZgz5Xp-Fc19CTT3Jtq0qNFTpOqBm3P-rC3kIIGKdZscz84Cymkt03sl9D6bv6EgjMun7gbEwGDc9Najdt0sBqwWrGsFPDyZUphP1hWOy9C4OPcLS2DgP0tmWtMTRHNM3wdhNKLynJIHV4ogMu1UgabUwA7DS1kroUFpk3pk1cxoabAp01K78uXgoEgZBLY5C6EkMXLIi4wb6yep19e95P8azdeyGpJjZlY3evpGGeyKG4huOHQvG5l8FPc-7IvE-jBaXnxanUBINBFfUE8L1S5JtU4la0cCx0IDFJ-6gU0yfLBayBzWc7AaDmLnnxopvynkglE44IUFtGN_ZovWY3yBEZnr7LwBL6i69vSPtX2fl6YmtbCEOYd7hKs2axrAuZUQZj4IAxfRJLJmBQDf_89Mr8K-6no4BaLa0PlmfbGgFIApFN0Bru0h0bTuSZXqXnScOrlO2PRW5HjuGwH-ToSPJIfEuII1XXrUZI5wvB0ga6OFH6hbJYdesBtLTWSI2Ifsk8Uw1NZLIRU4ZCXRdoLgCAjRg6Q2upKYZ5WH0eSF_DQoZA4RkMO5YjxYd25Ykf6vK-3oo14ZgHKjacPhRLjOB1W3aw2LgP9fz1AKdlyWE9WB3MBrHssKzGFN3SnUSAqZhnjhrjK61ydUznpnGOfHRQPezlS_svl49wCRJOyaIffEOvdOk3kaZyuwuFAmuB81t_r-0jdFXDmC_9Jok_kfWF5toT3Ffn0pSaZL7HGQhHy1SY6BDLNvt9yIzwnoSN5nR9D-8DfhaSFj_j7K_4oBcJq4DJCSWBmGYfgTyxhqmpSN44oBVy6Qzs24CSQTnFtMlFBGSoMbU1purM6szcvt61ki2bkyoC1iAIdVGEsge272m8s_wuU6jyliqAgbUOep7Urd-6T3odrNDuEK5wLfU5AKsTgED1-V5ittnM9JDqMDm8yrvXbyae8dPbIK6a2Q5BMQ512MjS8uZ4yUhdNg5slUV-4KLF_9oScOwk-w0gKF7mrmMoqBHdLWzuheHqBSRMKqSDTsvOrtcs4DbJjjFJewEf2jAUP04CJSXrUunyH_R5wZ3DidV3IRFI_gnzhff7xySyEDWEzF14zBqqdupjJ0uMJNHF1ECPruqlcytH4ErNArvROG_ds-Dng8FvYfXUxsL6YIPUdCXlGTKnkkxdFXTFB6pvnr9uuTTIjDffD0fioQIn80sl6pPjXlTwrrEdaBwIzpzZS0" type="image/svg+xml"></object>
+<object style="width: 100%" data="//www.plantuml.com/plantuml/svg/f5PBRjim45s7f-0gy2UsWIuBsyYd2D25WG3kBiY2aYYPYKGg99N6JdooBdgaNg6KI56af2I0l1DdD3EFytd3Vt_-NWg9k2oo58WdGdF4KGR5I_A3P9WAmkXMxbCCOvGA381a2POxpE4RE4E1a1o54eOf4W9kSKOIpeeStj_lfCo_BnQno3bxnA4KyuJ8NH7C2LlSRdU8vtTf8HQr1nLb9chp-KvcwSD36G72AHnDn_0Lxi7P4NH2th2CKHGD2nXgurOu_Ae3l9heg_Lw30LCu7kfmZGg3wLkjT9_H4MUaX19N9eSWKBP0hbXb9616BFAje5O1ZnWpe2J6VXsbUSAc801apkeJSGHL13B_xRuUIwAJE5JuDheRWiQIiQ7mOkriOylGpcCLJ0Rlw07akledVfHTNn1d20gXrRHSU43qQeQJi_TLTwgqf4NF2muQXpueJcM1QTL4bITbXFLGrvAcXnDOKfY-QqygIRlfkWgbPZJKp0s3doCEClbtW1yxm2CIMa7--ks6JvrhPdh9ckzNfLj7VSdwv4Hsb_CQnAVqie1wMtcDqMEaeH7610D8p50OiA5jB04LiqMsJxh31bB8nIa0oiO6siNcSKrXPAf0Uyjaqh9IO43yaLe_SF6IKn7MMaE_Rfh53vfItYeqXWGorEjg_nICuwv67uNsJZuA8_w3-mKzRd0DCGVv5QU2YaWNuEo_pImL98yO9-iv3lEJXgAtDgtjgH563bZKMdIUbgh4xUdlksjbcR2-7uWyHlh5Z8b_XcPtRrSBajQyzQrufUr4VOjwolEsU-1H5kQ-koXH1MHLL-tXZ6IXjcKT5ipHwBfRpAPZ9lJ-VcvFbMiqhomu6pslgvV5g3UuLfgYR0bTxOTS3UVzOMY7hcpVu29Dv_R_rr9JNAUiA4WYwPoQrvklj0PSc0fiwDnMCtSrnaZxmO6mQTgrxCBtBst1Ua_MC38A2vy-LZZQeOFE7CuisqFHetumagDiMv4SAdUTUNB_3y0003__mC0" type="image/svg+xml"></object>
 <p>Some more abstractions <a href="abstraction-misc.html">here</a>.</p>
-
-
-        </div>
-        <div class="span3">
-          <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
-		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
-		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
-		  <li><a href="/FSharpPlus/license.html">License</a></li>
-		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
-
-		  <li class="nav-header">Getting started</li>
-		  <li><a href="/FSharpPlus/tutorial.html">Tutorial</a></li>
-
-		  <li class="nav-header">Documentation</li>
-		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
-		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
-		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
-		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>
-		  </ul>
-        </div>
-      </div>
-    </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
-  </body>
-  </html>
+</div><div class="span3"><img src="./img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" /><ul class="nav nav-list" id="menu" style="margin-top:20px"><li class="nav-header">FSharpPlus</li><li><a href="./index.html">Home page</a></li><li class="divider"></li><li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li><li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li><li><a href="./license.html">License</a></li><li><a href="./release-notes.html">Release Notes</a></li><li class="nav-header">Getting started</li><li><a href="./tutorial.html">Tutorial</a></li><li class="nav-header">Documentation</li><li><a href="./reference/index.html">API Reference</a></li><li><a href="./types.html">Types</a></li><li><a href="./abstractions.html">Abstractions</a></li><li><a href="./computation-expressions.html">Computation Expressions</a></li><li><a href="./numerics.html">Numerics</a></li></ul></div></div></div><a href="https://github.com/fsprojects/FSharpPlus"><img style="position:absolute;top:0;right:0;border:0" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a></body></html>

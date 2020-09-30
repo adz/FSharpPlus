@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>List</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Additional operations on List</p>
@@ -54,52 +57,53 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '83', 83)" onmouseover="showTip(event, '83', 83)">
-            apply(f x)
+          <code onmouseout="hideTip(event, '159', 159)" onmouseover="showTip(event, '159', 159)">
+            List.apply f x
           </code>
-          <div class="tip" id="83">
+          <div class="tip" id="159">
             <strong>Signature:</strong> f:(&#39;a -&gt; &#39;b) list -&gt; x:&#39;a list -&gt; &#39;b list<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+                          <strong>Type parameters:</strong> 'a, 'b                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L200-200" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L29-29" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Applies a list of functions to a list of values and concatenates them</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '84', 84)" onmouseover="showTip(event, '84', 84)">
-            cons(x y)
+          <code onmouseout="hideTip(event, '160', 160)" onmouseover="showTip(event, '160', 160)">
+            List.cons x list
           </code>
-          <div class="tip" id="84">
-            <strong>Signature:</strong> x:&#39;f -&gt; y:&#39;f list -&gt; &#39;f list<br />
-                          <strong>Type parameters:</strong> 'f          </div>
+          <div class="tip" id="160">
+            <strong>Signature:</strong> x:&#39;f -&gt; list:&#39;f list -&gt; &#39;f list<br />
+                          <strong>Type parameters:</strong> 'f                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L199-199" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L16-16" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Adds an element to the beginning of the given list</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '85', 85)" onmouseover="showTip(event, '85', 85)">
-            drop(i list)
+          <code onmouseout="hideTip(event, '161', 161)" onmouseover="showTip(event, '161', 161)">
+            List.drop i list
           </code>
-          <div class="tip" id="85">
+          <div class="tip" id="161">
             <strong>Signature:</strong> i:int -&gt; list:&#39;b list -&gt; &#39;b list<br />
-                          <strong>Type parameters:</strong> 'b          </div>
+                          <strong>Type parameters:</strong> 'b                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L222-222" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L54-54" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -111,74 +115,130 @@ remaining elements of the list.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '86', 86)" onmouseover="showTip(event, '86', 86)">
-            intercalate(separator source)
+          <code onmouseout="hideTip(event, '162', 162)" onmouseover="showTip(event, '162', 162)">
+            List.findSliceIndex slice source
           </code>
-          <div class="tip" id="86">
+          <div class="tip" id="162">
+            <strong>Signature:</strong> slice:&#39;b list -&gt; source:&#39;b list -&gt; int<br />
+                          <strong>Type parameters:</strong> 'b                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L94-94" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Gets the index of the first occurrence of the specified slice in the source.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '163', 163)" onmouseover="showTip(event, '163', 163)">
+            List.intercalate separator source
+          </code>
+          <div class="tip" id="163">
             <strong>Signature:</strong> separator:&#39;a list -&gt; source:seq&lt;&#39;a list&gt; -&gt; &#39;a list<br />
-                          <strong>Type parameters:</strong> 'a          </div>
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L229-229" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L62-62" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Concatenates all elements, using the specified separator between each element.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '87', 87)" onmouseover="showTip(event, '87', 87)">
-            intersperse(element source)
+          <code onmouseout="hideTip(event, '164', 164)" onmouseover="showTip(event, '164', 164)">
+            List.intersperse element source
           </code>
-          <div class="tip" id="87">
+          <div class="tip" id="164">
             <strong>Signature:</strong> element:&#39;T -&gt; source:&#39;T list -&gt; &#39;T list<br />
-                          <strong>Type parameters:</strong> 'T          </div>
+                          <strong>Type parameters:</strong> 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L232-232" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L65-65" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Inserts a separator between each element in the source list.</p>
+          <p>Inserts a separator element between each element in the source list.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '88', 88)" onmouseover="showTip(event, '88', 88)">
-            replace(oldValue newValue source)
+          <code onmouseout="hideTip(event, '165', 165)" onmouseover="showTip(event, '165', 165)">
+            List.lift2 f x1 x2
           </code>
-          <div class="tip" id="88">
+          <div class="tip" id="165">
+            <strong>Signature:</strong> f:(&#39;d -&gt; &#39;e -&gt; &#39;f) -&gt; x1:&#39;d list -&gt; x2:&#39;e list -&gt; &#39;f list<br />
+                          <strong>Type parameters:</strong> 'd, 'e, 'f                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L32-32" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Combines all values from the first list with the second, using the supplied mapping function.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '166', 166)" onmouseover="showTip(event, '166', 166)">
+            List.partitionMap mapping source
+          </code>
+          <div class="tip" id="166">
+            <strong>Signature:</strong> mapping:(&#39;T -&gt; Choice&lt;&#39;T1,&#39;T2&gt;) -&gt; source:&#39;T list -&gt; &#39;T1 list * &#39;T2 list<br />
+                          <strong>Type parameters:</strong> 'T, 'T1, 'T2                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L120-120" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates two lists by applying the mapping function to each element in the list
+and classifying the transformed values depending on whether they were wrapped with Choice1Of2 or Choice2Of2.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '167', 167)" onmouseover="showTip(event, '167', 167)">
+            List.replace oldValue newValue source
+          </code>
+          <div class="tip" id="167">
             <strong>Signature:</strong> oldValue:seq&lt;&#39;T&gt; -&gt; newValue:&#39;T list -&gt; source:&#39;T list -&gt; &#39;T list<br />
-                          <strong>Type parameters:</strong> 'T          </div>
+                          <strong>Type parameters:</strong> 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L238-238" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L71-71" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Replace a subsequence of the source list with the given replacement list.</p>
+          <p>Replaces a subsequence of the source list with the given replacement list.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '89', 89)" onmouseover="showTip(event, '89', 89)">
-            singleton(x)
+          <code onmouseout="hideTip(event, '168', 168)" onmouseover="showTip(event, '168', 168)">
+            List.singleton(x)
           </code>
-          <div class="tip" id="89">
-            <strong>Signature:</strong> x:&#39;b -&gt; &#39;b list<br />
-                          <strong>Type parameters:</strong> 'b          </div>
+          <div class="tip" id="168">
+            <strong>Signature:</strong> x:&#39;c -&gt; &#39;c list<br />
+                          <strong>Type parameters:</strong> 'c                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L197-197" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L10-10" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -189,16 +249,15 @@ remaining elements of the list.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '90', 90)" onmouseover="showTip(event, '90', 90)">
-            skip(i list)
+          <code onmouseout="hideTip(event, '169', 169)" onmouseover="showTip(event, '169', 169)">
+            List.skip i list
           </code>
-          <div class="tip" id="90">
-            <strong>Signature:</strong> i:int -&gt; list:&#39;b list -&gt; &#39;b list<br />
-                          <strong>Type parameters:</strong> 'b          </div>
+          <div class="tip" id="169">
+            <strong>Signature:</strong> i:int -&gt; list:&#39;a list -&gt; &#39;a list<br />
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L207-207" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L39-39" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -207,16 +266,15 @@ remaining elements of the list.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '91', 91)" onmouseover="showTip(event, '91', 91)">
-            split(separators source)
+          <code onmouseout="hideTip(event, '170', 170)" onmouseover="showTip(event, '170', 170)">
+            List.split separators source
           </code>
-          <div class="tip" id="91">
+          <div class="tip" id="170">
             <strong>Signature:</strong> separators:seq&lt;&#39;a list&gt; -&gt; source:&#39;a list -&gt; seq&lt;&#39;a list&gt;<br />
-                          <strong>Type parameters:</strong> 'a          </div>
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L235-235" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L68-68" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -227,16 +285,15 @@ remaining elements of the list.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '92', 92)" onmouseover="showTip(event, '92', 92)">
-            tails(x)
+          <code onmouseout="hideTip(event, '171', 171)" onmouseover="showTip(event, '171', 171)">
+            List.tails(x)
           </code>
-          <div class="tip" id="92">
+          <div class="tip" id="171">
             <strong>Signature:</strong> x:&#39;a list -&gt; &#39;a list list<br />
-                          <strong>Type parameters:</strong> 'a          </div>
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L203-203" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L35-35" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -247,16 +304,15 @@ remaining elements of the list.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '93', 93)" onmouseover="showTip(event, '93', 93)">
-            take(i list)
+          <code onmouseout="hideTip(event, '172', 172)" onmouseover="showTip(event, '172', 172)">
+            List.take i list
           </code>
-          <div class="tip" id="93">
-            <strong>Signature:</strong> i:int -&gt; list:seq&lt;&#39;b&gt; -&gt; &#39;b list<br />
-                          <strong>Type parameters:</strong> 'b          </div>
+          <div class="tip" id="172">
+            <strong>Signature:</strong> i:int -&gt; list:seq&lt;&#39;a&gt; -&gt; &#39;a list<br />
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L205-205" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L37-37" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -265,20 +321,41 @@ remaining elements of the list.</p>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '94', 94)" onmouseover="showTip(event, '94', 94)">
-            toIReadOnlyList(source)
+          <code onmouseout="hideTip(event, '173', 173)" onmouseover="showTip(event, '173', 173)">
+            List.toIReadOnlyList(source)
           </code>
-          <div class="tip" id="94">
-            <strong>Signature:</strong> source:&#39;?19458 list -&gt; IReadOnlyList&lt;&#39;?19458&gt;<br />
-                          <strong>Type parameters:</strong> '?19458          </div>
+          <div class="tip" id="173">
+            <strong>Signature:</strong> source:&#39;?25504 list -&gt; IReadOnlyList&lt;&#39;?25504&gt;<br />
+                          <strong>Type parameters:</strong> '?25504                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L240-240" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L76-76" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Converts a list to an IReadOnlyList (from System.Collections.Generic).</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '174', 174)" onmouseover="showTip(event, '174', 174)">
+            List.tryFindSliceIndex slice source
+          </code>
+          <div class="tip" id="174">
+            <strong>Signature:</strong> slice:&#39;b list -&gt; source:&#39;b list -&gt; int option<br />
+                          <strong>Type parameters:</strong> 'b                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/List.fs#L108-108" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Gets the index of the first occurrence of the specified slice in the source.
+Returns None if not found.</p>
+
+
         </td>
       </tr>
     </tbody>
@@ -301,6 +378,7 @@ remaining elements of the list.</p>
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

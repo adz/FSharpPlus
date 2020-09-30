@@ -33,11 +33,16 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>ZipList<'s></h1>
 <p>
-  <span>Namespace: FSharpPlus.Data</span><br />
+
+    <span>Namespace: FSharpPlus.Data</span><br />
+            <span>
+            Attributes: <br />
+[&lt;NoEquality&gt;]<br />
+[&lt;NoComparison&gt;]<br />
+            
+        </span>
 </p>
 <div class="xmldoc">
 <p>A sequence with an Applicative functor based on zipping.</p>
@@ -51,16 +56,15 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1799', 1799)" onmouseover="showTip(event, '1799', 1799)">
+          <code onmouseout="hideTip(event, '2918', 2918)" onmouseover="showTip(event, '2918', 2918)">
             ZipList(seq&lt;&#39;s&gt;)
           </code>
-          <div class="tip" id="1799">
+          <div class="tip" id="2918">
             <strong>Signature:</strong> seq&lt;&#39;s&gt;<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L11-11" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L9-9" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -77,16 +81,15 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1800', 1800)" onmouseover="showTip(event, '1800', 1800)">
+          <code onmouseout="hideTip(event, '2919', 2919)" onmouseover="showTip(event, '2919', 2919)">
             [n]
           </code>
-          <div class="tip" id="1800">
+          <div class="tip" id="2919">
             <strong>Signature:</strong> n:int -&gt; &#39;s<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L12-12" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L10-10" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -103,16 +106,15 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1801', 1801)" onmouseover="showTip(event, '1801', 1801)">
-            ( + )(x, y)
+          <code onmouseout="hideTip(event, '2920', 2920)" onmouseover="showTip(event, '2920', 2920)">
+            ZipList.( + )(x, y)
           </code>
-          <div class="tip" id="1801">
+          <div class="tip" id="2920">
             <strong>Signature:</strong> (x:ZipList&lt;^a&gt; * y:ZipList&lt;^a&gt;) -&gt; ZipList&lt;^a&gt;<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L28-28" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L51-51" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -122,16 +124,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1802', 1802)" onmouseover="showTip(event, '1802', 1802)">
-            ( &lt;*&gt; )(arg1, arg2)
+          <code onmouseout="hideTip(event, '2921', 2921)" onmouseover="showTip(event, '2921', 2921)">
+            ZipList.( &lt;*&gt; )(arg1, arg2)
           </code>
-          <div class="tip" id="1802">
+          <div class="tip" id="2921">
             <strong>Signature:</strong> (ZipList&lt;(&#39;a -&gt; &#39;b)&gt; * ZipList&lt;&#39;a&gt;) -&gt; ZipList&lt;&#39;b&gt;<br />
-                          <strong>Type parameters:</strong> 'b          </div>
+                          <strong>Type parameters:</strong> 'b                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L26-26" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L33-33" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -141,16 +142,50 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1803', 1803)" onmouseover="showTip(event, '1803', 1803)">
-            get_Zero()
+          <code onmouseout="hideTip(event, '2922', 2922)" onmouseover="showTip(event, '2922', 2922)">
+            ZipList.( &lt;|&gt; )(arg1, arg2)
           </code>
-          <div class="tip" id="1803">
+          <div class="tip" id="2922">
+            <strong>Signature:</strong> (ZipList&lt;&#39;?9091&gt; * ZipList&lt;&#39;?9091&gt;) -&gt; ZipList&lt;&#39;?9091&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L38-38" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+              <p>CompiledName: <code>op_LessBarGreater</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2923', 2923)" onmouseover="showTip(event, '2923', 2923)">
+            ZipList.get_Empty()
+          </code>
+          <div class="tip" id="2923">
+            <strong>Signature:</strong> unit -&gt; ZipList&lt;&#39;?9088&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L37-37" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2924', 2924)" onmouseover="showTip(event, '2924', 2924)">
+            ZipList.get_Zero()
+          </code>
+          <div class="tip" id="2924">
             <strong>Signature:</strong> unit -&gt; ZipList&lt;^a&gt;<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L27-27" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L50-50" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -159,16 +194,53 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1804', 1804)" onmouseover="showTip(event, '1804', 1804)">
-            Map(arg1, f)
+          <code onmouseout="hideTip(event, '2925', 2925)" onmouseover="showTip(event, '2925', 2925)">
+            ZipList.IsLeftZero(arg1)
           </code>
-          <div class="tip" id="1804">
+          <div class="tip" id="2925">
+            <strong>Signature:</strong> ZipList&lt;&#39;?9085&gt; -&gt; bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L35-35" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2926', 2926)" onmouseover="showTip(event, '2926', 2926)">
+            ZipList.Lift2(f, x, y)
+          </code>
+          <div class="tip" id="2926">
+            <strong>Signature:</strong> (f:(&#39;T1 -&gt; &#39;T2 -&gt; &#39;?9082) * x:ZipList&lt;&#39;T1&gt; * y:ZipList&lt;&#39;T2&gt;) -&gt; ZipList&lt;&#39;?9082&gt;<br />
+                          <strong>Type parameters:</strong> 'T2, '?9082                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L34-34" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2927', 2927)" onmouseover="showTip(event, '2927', 2927)">
+            ZipList.Map(arg1, f)
+          </code>
+          <div class="tip" id="2927">
             <strong>Signature:</strong> (ZipList&lt;&#39;a&gt; * f:(&#39;a -&gt; &#39;b)) -&gt; ZipList&lt;&#39;b&gt;<br />
-                          <strong>Type parameters:</strong> 'b          </div>
+                          <strong>Type parameters:</strong> 'b                        <span>
+            <strong>Attributes:</strong><br />
+[&lt;EditorBrowsable(1)&gt;]<br />
+          </span>
+          </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L23-23" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L30-30" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -177,16 +249,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1805', 1805)" onmouseover="showTip(event, '1805', 1805)">
-            Return(x)
+          <code onmouseout="hideTip(event, '2928', 2928)" onmouseover="showTip(event, '2928', 2928)">
+            ZipList.Return(x)
           </code>
-          <div class="tip" id="1805">
+          <div class="tip" id="2928">
             <strong>Signature:</strong> x:&#39;a -&gt; ZipList&lt;&#39;a&gt;<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L25-25" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L32-32" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -195,16 +266,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1806', 1806)" onmouseover="showTip(event, '1806', 1806)">
-            ToSeq(arg1)
+          <code onmouseout="hideTip(event, '2929', 2929)" onmouseover="showTip(event, '2929', 2929)">
+            ZipList.ToSeq(arg1)
           </code>
-          <div class="tip" id="1806">
-            <strong>Signature:</strong> ZipList&lt;&#39;?8028&gt; -&gt; seq&lt;&#39;?8028&gt;<br />
-                      </div>
+          <div class="tip" id="2929">
+            <strong>Signature:</strong> ZipList&lt;&#39;?9098&gt; -&gt; seq&lt;&#39;?9098&gt;<br />
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L29-29" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L46-46" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -213,16 +283,36 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1807', 1807)" onmouseover="showTip(event, '1807', 1807)">
-            Traverse(arg1, f)
+          <code onmouseout="hideTip(event, '2930', 2930)" onmouseover="showTip(event, '2930', 2930)">
+            ZipList.Traverse(arg1, f)
           </code>
-          <div class="tip" id="1807">
+          <div class="tip" id="2930">
             <strong>Signature:</strong> (ZipList&lt;&#39;T&gt; * f:(&#39;T -&gt; ^Functor&lt;&#39;U&gt;)) -&gt; ^Functor&lt;ZipList&lt;&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Functor<'U>, ^?8033, '?8034, ^Functor<List<'U>>, '?8043, ^Functor<ZipList<'U>>, '?8045          </div>
+                          <strong>Type parameters:</strong> ^Functor<'U>, ^?9109, ^?9110, '?9111, '?9112, ^Functor<List<'U>>, '?9122, ^Functor<ZipList<'U>>, '?9124                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L31-31" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L53-53" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2931', 2931)" onmouseover="showTip(event, '2931', 2931)">
+            ZipList.Zip(x, y)
+          </code>
+          <div class="tip" id="2931">
+            <strong>Signature:</strong> (x:ZipList&lt;&#39;?9094&gt; * y:ZipList&lt;&#39;?9095&gt;) -&gt; ZipList&lt;&#39;?9094 * &#39;?9095&gt;<br />
+                          <strong>Type parameters:</strong> '?9095                        <span>
+            <strong>Attributes:</strong><br />
+[&lt;EditorBrowsable(1)&gt;]<br />
+          </span>
+          </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L44-44" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -249,6 +339,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

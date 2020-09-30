@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>IReadOnlyList</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Additional operations on ReadOnlyList<'T></p>
@@ -54,76 +57,72 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '79', 79)" onmouseover="showTip(event, '79', 79)">
-            add(i value source)
+          <code onmouseout="hideTip(event, '105', 105)" onmouseover="showTip(event, '105', 105)">
+            IReadOnlyList.ofArray(source)
           </code>
-          <div class="tip" id="79">
-            <strong>Signature:</strong> i:int -&gt; value:&#39;?19498 -&gt; source:IReadOnlyList&lt;&#39;?19498&gt; -&gt; IReadOnlyList&lt;&#39;?19498&gt; option<br />
-                          <strong>Type parameters:</strong> '?19498          </div>
+          <div class="tip" id="105">
+            <strong>Signature:</strong> source:&#39;T array -&gt; IReadOnlyList&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L319-319" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyList.fs#L10-10" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '106', 106)" onmouseover="showTip(event, '106', 106)">
+            IReadOnlyList.toArray(source)
+          </code>
+          <div class="tip" id="106">
+            <strong>Signature:</strong> source:IReadOnlyList&lt;&#39;T&gt; -&gt; &#39;T []<br />
+                          <strong>Type parameters:</strong> 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyList.fs#L12-12" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '107', 107)" onmouseover="showTip(event, '107', 107)">
+            IReadOnlyList.tryItem i source
+          </code>
+          <div class="tip" id="107">
+            <strong>Signature:</strong> i:int -&gt; source:IReadOnlyList&lt;&#39;?25370&gt; -&gt; &#39;?25370 option<br />
+                          <strong>Type parameters:</strong> '?25370                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyList.fs#L24-24" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '108', 108)" onmouseover="showTip(event, '108', 108)">
+            IReadOnlyList.trySetItem i value source
+          </code>
+          <div class="tip" id="108">
+            <strong>Signature:</strong> i:int -&gt; value:&#39;T -&gt; source:IReadOnlyList&lt;&#39;T&gt; -&gt; IReadOnlyList&lt;&#39;T&gt; option<br />
+                          <strong>Type parameters:</strong> 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyList.fs#L17-17" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
           <p>Returns a new IReadOnlyList from a given IReadOnlyList, with replaced binding for index.</p>
 
 
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '80', 80)" onmouseover="showTip(event, '80', 80)">
-            ofArray(source)
-          </code>
-          <div class="tip" id="80">
-            <strong>Signature:</strong> source:&#39;?19494 array -&gt; IReadOnlyList&lt;&#39;?19494&gt;<br />
-                          <strong>Type parameters:</strong> '?19494          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L315-315" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
-            toArray(source)
-          </code>
-          <div class="tip" id="81">
-            <strong>Signature:</strong> source:IReadOnlyList&lt;&#39;?19496&gt; -&gt; &#39;?19496 []<br />
-                          <strong>Type parameters:</strong> '?19496          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L316-316" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '82', 82)" onmouseover="showTip(event, '82', 82)">
-            tryItem(i source)
-          </code>
-          <div class="tip" id="82">
-            <strong>Signature:</strong> i:int -&gt; source:IReadOnlyList&lt;&#39;?19500&gt; -&gt; &#39;?19500 option<br />
-                          <strong>Type parameters:</strong> '?19500          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L325-325" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
         </td>
       </tr>
     </tbody>
@@ -146,6 +145,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

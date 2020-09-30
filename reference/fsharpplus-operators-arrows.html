@@ -33,13 +33,11 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Arrows</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
   <span>Parent Module: <a href="fsharpplus-operators.html">Operators</a></span>
-</p>
+  </p>
 <div class="xmldoc">
 <p>Additional operators for Arrows related functions which shadows some F# operators for bitwise functions.</p>
 
@@ -55,20 +53,19 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '284', 284)" onmouseover="showTip(event, '284', 284)">
+          <code onmouseout="hideTip(event, '402', 402)" onmouseover="showTip(event, '402', 402)">
             ( &amp;&amp;&amp; ) f g
           </code>
-          <div class="tip" id="284">
+          <div class="tip" id="402">
             <strong>Signature:</strong> f:&#39;Arrow&lt;&#39;T,&#39;U1&gt; -&gt; g:&#39;Arrow&lt;&#39;T,&#39;U2&gt; -&gt; ^Arrow&lt;&#39;T,(&#39;U1 * &#39;U2)&gt;<br />
-                          <strong>Type parameters:</strong> 'Arrow<'T,'U1>, 'Arrow<'T,'U2>, ^Arrow<'T,('U1 * 'U2)>          </div>
+                          <strong>Type parameters:</strong> 'Arrow<'T,'U1>, 'Arrow<'T,'U2>, ^Arrow<'T,('U1 * 'U2)>                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L739-739" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L1055-1055" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Send the input to both argument arrows and combine their output. Also known as fanout.</p>
+          <p>Sends the input to both argument arrows and combine their output. Also known as fanout.</p>
 
 
               <p>CompiledName: <code>op_BitwiseAnd</code></p>
@@ -76,37 +73,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '285', 285)" onmouseover="showTip(event, '285', 285)">
-            ( ||| ) f g
-          </code>
-          <div class="tip" id="285">
-            <strong>Signature:</strong> f:&#39;ArrowChoice&lt;&#39;T,&#39;V&gt; -&gt; g:&#39;ArrowChoice&lt;&#39;U,&#39;V&gt; -&gt; ^ArrowChoice&lt;Choice&lt;&#39;U,&#39;T&gt;,&#39;V&gt;<br />
-                          <strong>Type parameters:</strong> 'ArrowChoice<'T,'V>, 'ArrowChoice<'U,'V>, ^ArrowChoice<Choice<'U,'T>,'V>          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L742-742" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Split the input between the two argument arrows and merge their outputs. Also known as fanin.</p>
-
-
-              <p>CompiledName: <code>op_BitwiseOr</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '286', 286)" onmouseover="showTip(event, '286', 286)">
+          <code onmouseout="hideTip(event, '403', 403)" onmouseover="showTip(event, '403', 403)">
             ( &lt;&lt;&lt; ) f g
           </code>
-          <div class="tip" id="286">
-            <strong>Signature:</strong> f:^?12745 -&gt; g:&#39;?12746 -&gt; &#39;?12747<br />
-                          <strong>Type parameters:</strong> ^?12745, '?12746, '?12747          </div>
+          <div class="tip" id="403">
+            <strong>Signature:</strong> f:^?16306 -&gt; g:&#39;?16307 -&gt; &#39;?16308<br />
+                          <strong>Type parameters:</strong> ^?16306, '?16307, '?16308                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L733-733" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L1049-1049" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -118,16 +93,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '287', 287)" onmouseover="showTip(event, '287', 287)">
+          <code onmouseout="hideTip(event, '404', 404)" onmouseover="showTip(event, '404', 404)">
             ( &gt;&gt;&gt; ) f g
           </code>
-          <div class="tip" id="287">
-            <strong>Signature:</strong> f:&#39;?12749 -&gt; g:^?12750 -&gt; &#39;?12751<br />
-                          <strong>Type parameters:</strong> '?12749, ^?12750, '?12751          </div>
+          <div class="tip" id="404">
+            <strong>Signature:</strong> f:&#39;?16310 -&gt; g:^?16311 -&gt; &#39;?16312<br />
+                          <strong>Type parameters:</strong> '?16310, ^?16311, '?16312                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L736-736" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L1052-1052" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -135,6 +109,26 @@
 
 
               <p>CompiledName: <code>op_RightShift</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '405', 405)" onmouseover="showTip(event, '405', 405)">
+            ( ||| ) f g
+          </code>
+          <div class="tip" id="405">
+            <strong>Signature:</strong> f:&#39;ArrowChoice&lt;&#39;T,&#39;V&gt; -&gt; g:&#39;ArrowChoice&lt;&#39;U,&#39;V&gt; -&gt; ^ArrowChoice&lt;Choice&lt;&#39;U,&#39;T&gt;,&#39;V&gt;<br />
+                          <strong>Type parameters:</strong> 'ArrowChoice<'T,'V>, 'ArrowChoice<'U,'V>, ^ArrowChoice<Choice<'U,'T>,'V>                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Operators.fs#L1058-1058" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Splits the input between the two argument arrows and merge their outputs. Also known as fanin.</p>
+
+
+              <p>CompiledName: <code>op_BitwiseOr</code></p>
         </td>
       </tr>
     </tbody>
@@ -157,6 +151,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

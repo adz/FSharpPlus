@@ -33,14 +33,12 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Extensions</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
-</p>
+  </p>
 <div class="xmldoc">
-<p>Module containing F#+ Extension Methods</p>
+<p>Module containing F#+ Extension Methods on existing types</p>
 
 </div>
 
@@ -54,16 +52,55 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
-            GetSlice
+          <code onmouseout="hideTip(event, '73', 73)" onmouseover="showTip(event, '73', 73)">
+            Async.Bisequence(t)
           </code>
-          <div class="tip" id="55">
-            <strong>Signature:</strong> int option * int option -&gt; IEnumerable&lt;&#39;T&gt;<br />
-                      </div>
+          <div class="tip" id="73">
+            <strong>Signature:</strong> t:Result&lt;Async&lt;&#39;T&gt;,Async&lt;&#39;Error&gt;&gt; -&gt; Async&lt;Result&lt;&#39;T,&#39;Error&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Error                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L933-933" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L103-103" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates an async Result from a Result where both cases are async.</p>
+
+
+              <p>CompiledName: <code>Async`1.Bisequence.Static</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '74', 74)" onmouseover="showTip(event, '74', 74)">
+            Async.Bisequence(t)
+          </code>
+          <div class="tip" id="74">
+            <strong>Signature:</strong> t:Choice&lt;Async&lt;&#39;T&gt;,Async&lt;&#39;Choice2Of2&gt;&gt; -&gt; Async&lt;Choice&lt;&#39;T,&#39;Choice2Of2&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Choice2Of2                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L109-109" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates an async Choice from a Choice where both cases are async.</p>
+
+
+              <p>CompiledName: <code>Async`1.Bisequence.Static</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '75', 75)" onmouseover="showTip(event, '75', 75)">
+            x.GetSlice
+          </code>
+          <div class="tip" id="75">
+            <strong>Signature:</strong> int option * int option -&gt; IEnumerable&lt;&#39;T&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L9-9" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -73,17 +110,16 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
-            GetSlice
+          <code onmouseout="hideTip(event, '76', 76)" onmouseover="showTip(event, '76', 76)">
+            x.GetSlice
           </code>
-          <div class="tip" id="56">
+          <div class="tip" id="76">
             <strong>Signature:</strong> int option * int option -&gt; IEnumerable&lt;&#39;T&gt;<br />
               <strong>Modifiers:</strong> abstract<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L933-933" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L9-9" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -93,16 +129,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '57', 57)" onmouseover="showTip(event, '57', 57)">
-            GetSlice
+          <code onmouseout="hideTip(event, '77', 77)" onmouseover="showTip(event, '77', 77)">
+            x.GetSlice
           </code>
-          <div class="tip" id="57">
+          <div class="tip" id="77">
             <strong>Signature:</strong> int option * int option -&gt; List&lt;&#39;T&gt;<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L942-942" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L18-18" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -112,16 +147,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
-            GetSlice
+          <code onmouseout="hideTip(event, '78', 78)" onmouseover="showTip(event, '78', 78)">
+            x.GetSlice
           </code>
-          <div class="tip" id="58">
+          <div class="tip" id="78">
             <strong>Signature:</strong> int option * int option -&gt; List&lt;&#39;T&gt;<br />
-                      </div>
+                                  </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L942-942" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L18-18" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -131,16 +165,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
-            Sequence(t)
+          <code onmouseout="hideTip(event, '79', 79)" onmouseover="showTip(event, '79', 79)">
+            Async.Sequence(t)
           </code>
-          <div class="tip" id="59">
-            <strong>Signature:</strong> t:seq&lt;Async&lt;&#39;?19760&gt;&gt; -&gt; Async&lt;seq&lt;&#39;?19760&gt;&gt;<br />
-                          <strong>Type parameters:</strong> '?19760          </div>
+          <div class="tip" id="79">
+            <strong>Signature:</strong> t:seq&lt;Async&lt;&#39;a&gt;&gt; -&gt; Async&lt;seq&lt;&#39;a&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L990-990" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L67-67" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -152,16 +185,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
-            Sequence(t)
+          <code onmouseout="hideTip(event, '80', 80)" onmouseover="showTip(event, '80', 80)">
+            Async.Sequence(t)
           </code>
-          <div class="tip" id="60">
-            <strong>Signature:</strong> (t:Async&lt;&#39;?19763&gt; list) -&gt; Async&lt;&#39;?19763 list&gt;<br />
-                          <strong>Type parameters:</strong> '?19763          </div>
+          <div class="tip" id="80">
+            <strong>Signature:</strong> (t:Async&lt;&#39;?24993&gt; list) -&gt; Async&lt;&#39;?24993 list&gt;<br />
+                          <strong>Type parameters:</strong> '?24993                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L998-998" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L75-75" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -173,16 +205,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '61', 61)" onmouseover="showTip(event, '61', 61)">
-            Sequence(t)
+          <code onmouseout="hideTip(event, '81', 81)" onmouseover="showTip(event, '81', 81)">
+            Async.Sequence(t)
           </code>
-          <div class="tip" id="61">
-            <strong>Signature:</strong> (t:Async&lt;&#39;?19766&gt; array) -&gt; Async&lt;&#39;?19766 array&gt;<br />
-                          <strong>Type parameters:</strong> '?19766          </div>
+          <div class="tip" id="81">
+            <strong>Signature:</strong> (t:Async&lt;&#39;?24996&gt; array) -&gt; Async&lt;&#39;?24996 array&gt;<br />
+                          <strong>Type parameters:</strong> '?24996                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L1005-1005" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L82-82" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -194,16 +225,55 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '62', 62)" onmouseover="showTip(event, '62', 62)">
-            Sequence(t)
+          <code onmouseout="hideTip(event, '82', 82)" onmouseover="showTip(event, '82', 82)">
+            Async.Sequence(t)
           </code>
-          <div class="tip" id="62">
+          <div class="tip" id="82">
+            <strong>Signature:</strong> t:Result&lt;Async&lt;&#39;T&gt;,&#39;Error&gt; -&gt; Async&lt;Result&lt;&#39;T,&#39;Error&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Error                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L91-91" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates an async Result from a Result where the Ok case is async.</p>
+
+
+              <p>CompiledName: <code>Async`1.Sequence.Static</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '83', 83)" onmouseover="showTip(event, '83', 83)">
+            Async.Sequence(t)
+          </code>
+          <div class="tip" id="83">
+            <strong>Signature:</strong> t:Choice&lt;Async&lt;&#39;T&gt;,&#39;Choice2Of2&gt; -&gt; Async&lt;Choice&lt;&#39;T,&#39;Choice2Of2&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Choice2Of2                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L97-97" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates an async Choice from a Choice where the Choice1Of2 case is async.</p>
+
+
+              <p>CompiledName: <code>Async`1.Sequence.Static</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '84', 84)" onmouseover="showTip(event, '84', 84)">
+            Option.Sequence(t)
+          </code>
+          <div class="tip" id="84">
             <strong>Signature:</strong> (t:seq&lt;&#39;T option&gt;) -&gt; seq&lt;&#39;T&gt; option<br />
-                          <strong>Type parameters:</strong> 'T          </div>
+                          <strong>Type parameters:</strong> 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L1017-1017" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L117-117" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -215,16 +285,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '63', 63)" onmouseover="showTip(event, '63', 63)">
-            WhenAll(tasks, ?cancellationToken)
+          <code onmouseout="hideTip(event, '85', 85)" onmouseover="showTip(event, '85', 85)">
+            Task.WhenAll(tasks, ?cancellationToken)
           </code>
-          <div class="tip" id="63">
+          <div class="tip" id="85">
             <strong>Signature:</strong> (tasks:Task&lt;&#39;a&gt; [] * cancellationToken:CancellationToken option) -&gt; Task&lt;&#39;a []&gt;<br />
-                          <strong>Type parameters:</strong> 'a          </div>
+                          <strong>Type parameters:</strong> 'a                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L968-968" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Extensions.fs#L45-45" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -252,6 +321,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

@@ -33,14 +33,17 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Async</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
-<p>Additional operations on IEnumerator</p>
+<p>Additional operations on Async</p>
 
 </div>
 
@@ -54,36 +57,35 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
-            apply f x
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            Async.apply f x
           </code>
-          <div class="tip" id="5">
+          <div class="tip" id="10">
             <strong>Signature:</strong> f:Async&lt;(&#39;a -&gt; &#39;b)&gt; -&gt; x:Async&lt;&#39;a&gt; -&gt; Async&lt;&#39;b&gt;<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+                          <strong>Type parameters:</strong> 'a, 'b                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L923-923" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Async.fs#L35-35" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Create an async workflow that is the result of applying the resulting function of an async workflow to the resulting value of another async workflow.</p>
+          <p>Creates an async workflow that is the result of applying the resulting function of
+an async workflow to the resulting value of another async workflow.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
-            join x
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+            Async.join(x)
           </code>
-          <div class="tip" id="6">
-            <strong>Signature:</strong> x:Async&lt;Async&lt;&#39;?19742&gt;&gt; -&gt; Async&lt;&#39;?19742&gt;<br />
-                          <strong>Type parameters:</strong> '?19742          </div>
+          <div class="tip" id="11">
+            <strong>Signature:</strong> x:Async&lt;Async&lt;&#39;?25028&gt;&gt; -&gt; Async&lt;&#39;?25028&gt;<br />
+                          <strong>Type parameters:</strong> '?25028                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L918-918" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Async.fs#L29-29" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -94,16 +96,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
-            map f x
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+            Async.map f x
           </code>
-          <div class="tip" id="7">
-            <strong>Signature:</strong> f:(&#39;?19732 -&gt; &#39;?19733) -&gt; x:Async&lt;&#39;?19732&gt; -&gt; Async&lt;&#39;?19733&gt;<br />
-                          <strong>Type parameters:</strong> '?19732, '?19733          </div>
+          <div class="tip" id="12">
+            <strong>Signature:</strong> f:(&#39;a -&gt; &#39;b) -&gt; x:Async&lt;&#39;a&gt; -&gt; Async&lt;&#39;b&gt;<br />
+                          <strong>Type parameters:</strong> 'a, 'b                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L899-899" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Async.fs#L10-10" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -114,60 +115,57 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
-            map2 f x y
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
+            Async.map2 f x y
           </code>
-          <div class="tip" id="8">
+          <div class="tip" id="13">
             <strong>Signature:</strong> f:(&#39;a -&gt; &#39;b -&gt; &#39;c) -&gt; x:Async&lt;&#39;a&gt; -&gt; y:Async&lt;&#39;b&gt; -&gt; Async&lt;&#39;c&gt;<br />
-                          <strong>Type parameters:</strong> 'a, 'b, 'c          </div>
+                          <strong>Type parameters:</strong> 'a, 'b, 'c                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L906-906" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Async.fs#L17-17" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Creates an async workflow from two workflows 'x' and 'y', mapping it results with 'f'.</p>
+          <p>Creates an async workflow from two workflows 'x' and 'y', mapping its results with 'f'.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
-            raise ex
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+            Async.raise(ex)
           </code>
-          <div class="tip" id="9">
+          <div class="tip" id="14">
             <strong>Signature:</strong> ex:exn -&gt; Async&lt;&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'T          </div>
+                          <strong>Type parameters:</strong> 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L926-926" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Async.fs#L38-38" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Raise an exception in the async workflow</p>
+          <p>Raises an exception in the async workflow</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
-            zip x y
+          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+            Async.zip x y
           </code>
-          <div class="tip" id="10">
+          <div class="tip" id="15">
             <strong>Signature:</strong> x:Async&lt;&#39;a&gt; -&gt; y:Async&lt;&#39;b&gt; -&gt; Async&lt;&#39;a * &#39;b&gt;<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+                          <strong>Type parameters:</strong> 'a, 'b                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L912-912" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Async.fs#L23-23" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Creates an async workflow from two workflows 'x' and 'y', tupling it results.</p>
+          <p>Creates an async workflow from two workflows 'x' and 'y', tupling its results.</p>
 
 
         </td>
@@ -192,6 +190,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

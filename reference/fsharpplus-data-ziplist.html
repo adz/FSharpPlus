@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>ZipList</h1>
 <p>
   <span>Namespace: FSharpPlus.Data</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Basic operations on ZipList</p>
@@ -54,16 +57,15 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '424', 424)" onmouseover="showTip(event, '424', 424)">
-            map(f arg2)
+          <code onmouseout="hideTip(event, '844', 844)" onmouseover="showTip(event, '844', 844)">
+            ZipList.map f arg2
           </code>
-          <div class="tip" id="424">
-            <strong>Signature:</strong> f:(&#39;?9960 -&gt; &#39;?9961) -&gt; ZipList&lt;&#39;?9960&gt; -&gt; ZipList&lt;&#39;?9961&gt;<br />
-                          <strong>Type parameters:</strong> '?9960, '?9961          </div>
+          <div class="tip" id="844">
+            <strong>Signature:</strong> f:(&#39;?12562 -&gt; &#39;?12563) -&gt; ZipList&lt;&#39;?12562&gt; -&gt; ZipList&lt;&#39;?12563&gt;<br />
+                          <strong>Type parameters:</strong> '?12562, '?12563                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L18-18" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L16-16" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -72,16 +74,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '425', 425)" onmouseover="showTip(event, '425', 425)">
-            run(arg1)
+          <code onmouseout="hideTip(event, '845', 845)" onmouseover="showTip(event, '845', 845)">
+            ZipList.map2 f arg2 arg3
           </code>
-          <div class="tip" id="425">
-            <strong>Signature:</strong> ZipList&lt;&#39;?9958&gt; -&gt; seq&lt;&#39;?9958&gt;<br />
-                          <strong>Type parameters:</strong> '?9958          </div>
+          <div class="tip" id="845">
+            <strong>Signature:</strong> f:(&#39;T1 -&gt; &#39;T2 -&gt; &#39;U) -&gt; ZipList&lt;&#39;T1&gt; -&gt; ZipList&lt;&#39;T2&gt; -&gt; ZipList&lt;&#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'U                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L17-17" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L17-17" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -90,20 +91,57 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '426', 426)" onmouseover="showTip(event, '426', 426)">
-            singleton(x)
+          <code onmouseout="hideTip(event, '846', 846)" onmouseover="showTip(event, '846', 846)">
+            ZipList.run(arg1)
           </code>
-          <div class="tip" id="426">
-            <strong>Signature:</strong> x:&#39;?9963 -&gt; ZipList&lt;&#39;?9963&gt;<br />
-                          <strong>Type parameters:</strong> '?9963          </div>
+          <div class="tip" id="846">
+            <strong>Signature:</strong> ZipList&lt;&#39;?12560&gt; -&gt; seq&lt;&#39;?12560&gt;<br />
+                          <strong>Type parameters:</strong> '?12560                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/ZipList.fs#L19-19" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L15-15" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
           
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '847', 847)" onmouseover="showTip(event, '847', 847)">
+            ZipList.singleton(x)
+          </code>
+          <div class="tip" id="847">
+            <strong>Signature:</strong> x:&#39;?12569 -&gt; ZipList&lt;&#39;?12569&gt;<br />
+                          <strong>Type parameters:</strong> '?12569                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L18-18" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '848', 848)" onmouseover="showTip(event, '848', 848)">
+            ZipList.zip list1 list2
+          </code>
+          <div class="tip" id="848">
+            <strong>Signature:</strong> list1:ZipList&lt;&#39;T&gt; -&gt; list2:ZipList&lt;&#39;U&gt; -&gt; ZipList&lt;&#39;T * &#39;U&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'U                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/ZipList.fs#L26-26" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Combines the two lists into a list of pairs. The two lists need not have equal lengths:
+when one list is exhausted any remaining elements in the other
+list are ignored.</p>
+
+
         </td>
       </tr>
     </tbody>
@@ -126,6 +164,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

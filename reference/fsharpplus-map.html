@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Map</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Additional operations on Map<'Key, 'Value></p>
@@ -54,16 +57,15 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '95', 95)" onmouseover="showTip(event, '95', 95)">
-            keys(source)
+          <code onmouseout="hideTip(event, '175', 175)" onmouseover="showTip(event, '175', 175)">
+            Map.intersect source1 source2
           </code>
-          <div class="tip" id="95">
-            <strong>Signature:</strong> source:Map&lt;&#39;?19503,&#39;?19504&gt; -&gt; seq&lt;&#39;?19503&gt;<br />
-                          <strong>Type parameters:</strong> '?19503, '?19504          </div>
+          <div class="tip" id="175">
+            <strong>Signature:</strong> source1:Map&lt;&#39;Key,&#39;T&gt; -&gt; source2:Map&lt;&#39;Key,&#39;T&gt; -&gt; Map&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L334-334" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L90-90" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -72,56 +74,91 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '96', 96)" onmouseover="showTip(event, '96', 96)">
-            mapValues(f x)
+          <code onmouseout="hideTip(event, '176', 176)" onmouseover="showTip(event, '176', 176)">
+            Map.intersectWith(...)
           </code>
-          <div class="tip" id="96">
-            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;?19510) -&gt; x:Map&lt;&#39;Key,&#39;T&gt; -&gt; Map&lt;&#39;Key,&#39;?19510&gt;<br />
-                          <strong>Type parameters:</strong> 'T, '?19510, 'Key          </div>
+          <div class="tip" id="176">
+            <strong>Signature:</strong> combiner:(&#39;T -&gt; &#39;T -&gt; &#39;T) -&gt; source1:Map&lt;&#39;Key,&#39;T&gt; -&gt; source2:Map&lt;&#39;Key,&#39;T&gt; -&gt; Map&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L343-343" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L77-77" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Map values of the original Map.</p>
+          <p>Returns the intersection of two maps, using the combiner function for duplicate keys.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '97', 97)" onmouseover="showTip(event, '97', 97)">
-            mapValues2(f x y)
+          <code onmouseout="hideTip(event, '177', 177)" onmouseover="showTip(event, '177', 177)">
+            Map.keys(source)
           </code>
-          <div class="tip" id="97">
-            <strong>Signature:</strong> f:(&#39;T1 -&gt; &#39;T2 -&gt; &#39;?19515) -&gt; x:Map&lt;&#39;Key,&#39;T1&gt; -&gt; y:Map&lt;&#39;Key,&#39;T2&gt; -&gt; Map&lt;&#39;Key,&#39;?19515&gt;<br />
-                          <strong>Type parameters:</strong> 'T1, 'T2, '?19515, 'Key          </div>
+          <div class="tip" id="177">
+            <strong>Signature:</strong> source:Map&lt;&#39;Key,&#39;T&gt; -&gt; seq&lt;&#39;Key&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L352-352" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L16-16" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Map values of two Maps.</p>
+          <p>Returns the keys of the given map.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '98', 98)" onmouseover="showTip(event, '98', 98)">
-            union(source altSource)
+          <code onmouseout="hideTip(event, '178', 178)" onmouseover="showTip(event, '178', 178)">
+            Map.mapValues f x
           </code>
-          <div class="tip" id="98">
+          <div class="tip" id="178">
+            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;?25324) -&gt; x:Map&lt;&#39;Key,&#39;T&gt; -&gt; Map&lt;&#39;Key,&#39;?25324&gt;<br />
+                          <strong>Type parameters:</strong> 'T, '?25324, 'Key                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L33-33" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Maps the values of the original Map.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '179', 179)" onmouseover="showTip(event, '179', 179)">
+            Map.mapValues2 f x y
+          </code>
+          <div class="tip" id="179">
+            <strong>Signature:</strong> f:(&#39;T1 -&gt; &#39;T2 -&gt; &#39;b) -&gt; x:Map&lt;&#39;Key,&#39;T1&gt; -&gt; y:Map&lt;&#39;Key,&#39;T2&gt; -&gt; Map&lt;&#39;Key,&#39;b&gt;<br />
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'b, 'Key                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L42-42" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Maps values of two Maps.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '180', 180)" onmouseover="showTip(event, '180', 180)">
+            Map.union source altSource
+          </code>
+          <div class="tip" id="180">
             <strong>Signature:</strong> source:Map&lt;&#39;Key,&#39;T&gt; -&gt; altSource:Map&lt;&#39;Key,&#39;T&gt; -&gt; Map&lt;&#39;Key,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L378-378" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L72-72" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -132,76 +169,76 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '99', 99)" onmouseover="showTip(event, '99', 99)">
-            unionWith(combiner source1 source2)
+          <code onmouseout="hideTip(event, '181', 181)" onmouseover="showTip(event, '181', 181)">
+            Map.unionWith combiner source1 source2
           </code>
-          <div class="tip" id="99">
+          <div class="tip" id="181">
             <strong>Signature:</strong> combiner:(&#39;Value -&gt; &#39;Value -&gt; &#39;Value) -&gt; source1:Map&lt;&#39;Key,&#39;Value&gt; -&gt; source2:Map&lt;&#39;Key,&#39;Value&gt; -&gt; Map&lt;&#39;Key,&#39;Value&gt;<br />
-                          <strong>Type parameters:</strong> 'Value, 'Key          </div>
+                          <strong>Type parameters:</strong> 'Value, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L374-374" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L68-68" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Returns the union of two dictionaries, using the combiner function for duplicate keys.</p>
+          <p>Returns the union of two maps, using the combiner function for duplicate keys.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '100', 100)" onmouseover="showTip(event, '100', 100)">
-            unzip(source)
+          <code onmouseout="hideTip(event, '182', 182)" onmouseover="showTip(event, '182', 182)">
+            Map.unzip(source)
           </code>
-          <div class="tip" id="100">
+          <div class="tip" id="182">
             <strong>Signature:</strong> source:Map&lt;&#39;Key,(&#39;T1 * &#39;T2)&gt; -&gt; Map&lt;&#39;Key,&#39;T1&gt; * Map&lt;&#39;Key,&#39;T2&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L371-371" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L65-65" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Splits a Map with tuple pair values to two separate Maps.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '101', 101)" onmouseover="showTip(event, '101', 101)">
-            values(source)
+          <code onmouseout="hideTip(event, '183', 183)" onmouseover="showTip(event, '183', 183)">
+            Map.values(source)
           </code>
-          <div class="tip" id="101">
-            <strong>Signature:</strong> source:Map&lt;&#39;?19506,&#39;?19507&gt; -&gt; seq&lt;&#39;?19507&gt;<br />
-                          <strong>Type parameters:</strong> '?19506, '?19507          </div>
+          <div class="tip" id="183">
+            <strong>Signature:</strong> source:Map&lt;&#39;Key,&#39;T&gt; -&gt; seq&lt;&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L335-335" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L22-22" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Returns the values of the given map.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '102', 102)" onmouseover="showTip(event, '102', 102)">
-            zip(x y)
+          <code onmouseout="hideTip(event, '184', 184)" onmouseover="showTip(event, '184', 184)">
+            Map.zip x y
           </code>
-          <div class="tip" id="102">
+          <div class="tip" id="184">
             <strong>Signature:</strong> x:Map&lt;&#39;Key,&#39;T1&gt; -&gt; y:Map&lt;&#39;Key,&#39;T2&gt; -&gt; Map&lt;&#39;Key,(&#39;T1 * &#39;T2)&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L365-365" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Map.fs#L55-55" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Tuple values of two Maps.</p>
+          <p>Tuples values of two Maps.</p>
 
 
         </td>
@@ -226,6 +263,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>ChoiceT<'monad<'choice<'t,'e>>> - FSharpPlus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Gusty"/>
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="/FSharpPlus/content/style.css" />
+    <script type="text/javascript" src="/FSharpPlus/content/tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+        </ul>
+        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+<h1>ChoiceT<'monad<'choice<'t,'e>>></h1>
+<p>
+
+    <span>Namespace: FSharpPlus.Data</span><br />
+            <span>
+            Attributes: <br />
+[&lt;Struct&gt;]<br />
+            
+        </span>
+</p>
+<div class="xmldoc">
+</div>
+  <h3>Union Cases</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Union Case</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2487', 2487)" onmouseover="showTip(event, '2487', 2487)">
+            ChoiceT(&#39;monad&lt;&#39;choice&lt;&#39;t,&#39;e&gt;&gt;)
+          </code>
+          <div class="tip" id="2487">
+            <strong>Signature:</strong> &#39;monad&lt;&#39;choice&lt;&#39;t,&#39;e&gt;&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L102-102" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Static members</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Static member</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2488', 2488)" onmouseover="showTip(event, '2488', 2488)">
+            ChoiceT.( &lt;*&gt; )(f, x)
+          </code>
+          <div class="tip" id="2488">
+            <strong>Signature:</strong> (f:ChoiceT&lt;^Monad&lt;&#39;Choice&lt;(&#39;T -&gt; &#39;U),&#39;E&gt;&gt;&gt; * x:ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;) -&gt; ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;U,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^?10466, '?10467, '?10468, '?10469, ^Monad<'Choice<'T,'E>>, ^Monad<'Choice<'U,'E>>                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L133-133" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+              <p>CompiledName: <code>op_LessMultiplyGreater</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2489', 2489)" onmouseover="showTip(event, '2489', 2489)">
+            ChoiceT.( &gt;&gt;= )(x, f)
+          </code>
+          <div class="tip" id="2489">
+            <strong>Signature:</strong> (x:ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;T,&#39;E&gt;&gt;&gt; * f:(&#39;T -&gt; ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;U,&#39;E&gt;&gt;&gt;)) -&gt; ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;U,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Monad<'Choice<'U,'E>>, '?10476, '?10477, 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L134-134" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+              <p>CompiledName: <code>op_GreaterGreaterEquals</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2490', 2490)" onmouseover="showTip(event, '2490', 2490)">
+            ChoiceT.CallCC(f)
+          </code>
+          <div class="tip" id="2490">
+            <strong>Signature:</strong> (f:((&#39;T -&gt; ChoiceT&lt;&#39;MonadCont&lt;&#39;R,Choice&lt;&#39;U,&#39;E&gt;&gt;&gt;) -&gt; ChoiceT&lt;^MonadCont&lt;&#39;R, Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;)) -&gt; ChoiceT&lt;^MonadCont&lt;&#39;R, Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'MonadCont<'R,Choice<'U,'E>>, ^MonadCont<'R, Choice<'T,'E>>, '?10513                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L144-144" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2491', 2491)" onmouseover="showTip(event, '2491', 2491)">
+            ChoiceT.Catch(arg1, f)
+          </code>
+          <div class="tip" id="2491">
+            <strong>Signature:</strong> (ChoiceT&lt;^MonadError&lt;&#39;E1,&#39;T&gt;&gt; * f:(&#39;E1 -&gt; ChoiceT&lt;^Monad&lt;Choice&lt;&#39;T,&#39;E2&gt;&gt;&gt;)) -&gt; ChoiceT&lt;^Monad&lt;Choice&lt;&#39;T,&#39;E2&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Monad<Choice<'T,'E2>>, '?10496, 'E1, '?10498                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L140-140" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2492', 2492)" onmouseover="showTip(event, '2492', 2492)">
+            ChoiceT.get_Ask()
+          </code>
+          <div class="tip" id="2492">
+            <strong>Signature:</strong> unit -&gt; ChoiceT&lt;^MonadReader&lt;&#39;R,Choice&lt;&#39;R,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^?10517, '?10518, '?10519                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L146-146" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2493', 2493)" onmouseover="showTip(event, '2493', 2493)">
+            ChoiceT.get_Get()
+          </code>
+          <div class="tip" id="2493">
+            <strong>Signature:</strong> unit -&gt; ChoiceT&lt;^MonadState&lt;&#39;S,Choice&lt;_,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> '?10557, '?10558, ^?10559, '?10560, '?10561                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L157-157" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2494', 2494)" onmouseover="showTip(event, '2494', 2494)">
+            ChoiceT.Lift(x)
+          </code>
+          <div class="tip" id="2494">
+            <strong>Signature:</strong> x:^Monad&lt;&#39;T&gt; -&gt; ChoiceT&lt;^Monad&lt;Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Monad<Choice<'T,'E>>, '?10483, '?10484, '?10485, '?10486                        <span>
+            <strong>Attributes:</strong><br />
+[&lt;EditorBrowsable(1)&gt;]<br />
+          </span>
+          </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L137-137" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2495', 2495)" onmouseover="showTip(event, '2495', 2495)">
+            ChoiceT.Lift2(f, x, y)
+          </code>
+          <div class="tip" id="2495">
+            <strong>Signature:</strong> (f:(&#39;T -&gt; &#39;U -&gt; &#39;V) * x:ChoiceT&lt;^Monad&lt;Choice&lt;&#39;T,&#39;E&gt;&gt; * y:ChoiceT&lt;^Monad&lt;Choice&lt;&#39;U,&#39;E&gt;&gt;) -&gt; ChoiceT&lt;^Monad&lt;Choice&lt;&#39;V,&#39;E&gt;&gt;<br />
+                          <strong>Type parameters:</strong> 'U, 'V, ^Monad<Choice<'T,'E>, ^Monad<Choice<'U,'E>, ^Monad<Choice<'V,'E>, '?10462                        <span>
+            <strong>Attributes:</strong><br />
+[&lt;EditorBrowsable(1)&gt;]<br />
+          </span>
+          </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L131-131" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2496', 2496)" onmouseover="showTip(event, '2496', 2496)">
+            ChoiceT.LiftAsync(x)
+          </code>
+          <div class="tip" id="2496">
+            <strong>Signature:</strong> x:Async&lt;&#39;T&gt; -&gt; ChoiceT&lt;^MonadAsync&lt;&#39;T&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^MonadAsync<'T>, '?10503, '?10504, ^?10505, '?10506, '?10507                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L142-142" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2497', 2497)" onmouseover="showTip(event, '2497', 2497)">
+            ChoiceT.Listen(m)
+          </code>
+          <div class="tip" id="2497">
+            <strong>Signature:</strong> m:ChoiceT&lt;&#39;?10537&gt; -&gt; ChoiceT&lt;^MonadWriter&lt;&#39;Monoid,Choice&lt;&#39;T*&#39;Monoid,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^MonadWriter<'Monoid,Choice<'T*'Monoid,'E>>, ^?10539, '?10540, '?10541, '?10542                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L151-151" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2498', 2498)" onmouseover="showTip(event, '2498', 2498)">
+            ChoiceT.Local(arg1, f)
+          </code>
+          <div class="tip" id="2498">
+            <strong>Signature:</strong> (ChoiceT&lt;^MonadReader&lt;&#39;R2,Choice&lt;&#39;R2,&#39;E&gt;&gt;&gt; * f:(&#39;R1 -&gt; &#39;R2)) -&gt; ChoiceT&lt;^?10525&gt;<br />
+                          <strong>Type parameters:</strong> 'R1, 'R2, ^?10525                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L147-147" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2499', 2499)" onmouseover="showTip(event, '2499', 2499)">
+            ChoiceT.Map(x, f)
+          </code>
+          <div class="tip" id="2499">
+            <strong>Signature:</strong> (x:ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;T,&#39;E&gt;&gt;&gt; * f:(&#39;T -&gt; &#39;U)) -&gt; ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;U,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Monad<'Choice<'U,'E>>, 'T, '?10452, 'U                        <span>
+            <strong>Attributes:</strong><br />
+[&lt;EditorBrowsable(1)&gt;]<br />
+          </span>
+          </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L128-128" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2500', 2500)" onmouseover="showTip(event, '2500', 2500)">
+            ChoiceT.Pass(m)
+          </code>
+          <div class="tip" id="2500">
+            <strong>Signature:</strong> m:ChoiceT&lt;^?10545&gt; -&gt; ChoiceT&lt;^MonadWriter&lt;&#39;Monoid,Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^MonadWriter<'Monoid,Choice<'T,'E>>, '?10547, '?10548, ^?10549, ^?10550, '?10551, '?10552, '?10553                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L155-155" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2501', 2501)" onmouseover="showTip(event, '2501', 2501)">
+            ChoiceT.Put(x)
+          </code>
+          <div class="tip" id="2501">
+            <strong>Signature:</strong> x:&#39;S -&gt; ChoiceT&lt;^MonadState&lt;&#39;S,Choice&lt;_,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^MonadState<'S,Choice<_,'E>>, '?10566, '?10567, ^?10568, '?10569, '?10570                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L158-158" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2502', 2502)" onmouseover="showTip(event, '2502', 2502)">
+            ChoiceT.Return(x)
+          </code>
+          <div class="tip" id="2502">
+            <strong>Signature:</strong> x:&#39;T -&gt; ChoiceT&lt;^Monad&lt;&#39;Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Monad<'Choice<'T,'E>>, '?10446                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L125-125" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2503', 2503)" onmouseover="showTip(event, '2503', 2503)">
+            ChoiceT.Tell(w)
+          </code>
+          <div class="tip" id="2503">
+            <strong>Signature:</strong> w:&#39;Monoid -&gt; ChoiceT&lt;^Writer&lt;&#39;Monoid,Choice&lt;unit,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Writer<'Monoid,Choice<unit,'E>>, '?10530, '?10531, ^?10532, '?10533, '?10534                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L149-149" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '2504', 2504)" onmouseover="showTip(event, '2504', 2504)">
+            ChoiceT.Throw(x)
+          </code>
+          <div class="tip" id="2504">
+            <strong>Signature:</strong> x:&#39;E -&gt; ChoiceT&lt;^Monad&lt;Choice&lt;&#39;T,&#39;E&gt;&gt;&gt;<br />
+                          <strong>Type parameters:</strong> ^Monad<Choice<'T,'E>>, '?10491                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Error.fs#L139-139" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
+		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
+		  	<li class="nav-header">FSharpPlus</li>
+		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
+		  <li class="divider"></li>
+		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
+		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+		  <li><a href="/FSharpPlus/license.html">License</a></li>
+		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
+
+		  <li class="nav-header">Getting started</li>
+		  <li><a href="/FSharpPlus/tutorial.html">Tutorial</a></li>
+
+		  <li class="nav-header">Documentation</li>
+		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
+		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
+		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
+		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>
+		  </ul>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+  </body>
+  </html>

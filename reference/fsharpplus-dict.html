@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>Dict</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Additional operations on IDictionary<'Key, 'Value></p>
@@ -54,16 +57,34 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
-            keys(source)
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            Dict.containsKey k dct
           </code>
-          <div class="tip" id="23">
-            <strong>Signature:</strong> source:IDictionary&lt;&#39;?19539,&#39;?19540&gt; -&gt; seq&lt;&#39;?19539&gt;<br />
-                          <strong>Type parameters:</strong> '?19539, '?19540          </div>
+          <div class="tip" id="31">
+            <strong>Signature:</strong> k:&#39;Key -&gt; dct:IDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L394-394" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L35-35" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Does the dictionary contain the given key?</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
+            Dict.intersect source1 source2
+          </code>
+          <div class="tip" id="32">
+            <strong>Signature:</strong> source1:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; source2:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IDictionary&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L135-135" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -72,70 +93,129 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
-            map(f x)
+          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
+            Dict.intersectWith(...)
           </code>
-          <div class="tip" id="24">
+          <div class="tip" id="33">
+            <strong>Signature:</strong> combiner:(&#39;T -&gt; &#39;T -&gt; &#39;T) -&gt; source1:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; source2:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IDictionary&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Key                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L123-123" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the intersection of two Dicts, using the combiner function for duplicate keys.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
+            Dict.keys(source)
+          </code>
+          <div class="tip" id="34">
+            <strong>Signature:</strong> source:IDictionary&lt;&#39;?25236,&#39;?25237&gt; -&gt; seq&lt;&#39;?25236&gt;<br />
+                          <strong>Type parameters:</strong> '?25236, '?25237                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L41-41" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the keys of the given dictionary.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
+            Dict.map f x
+          </code>
+          <div class="tip" id="35">
             <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U) -&gt; x:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IDictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'Key          </div>
+                          <strong>Type parameters:</strong> 'T, 'U, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L397-397" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L54-54" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Maps the given function over each value in the dictionary.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
-            map2(f x y)
+          <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
+            Dict.map2 f x y
           </code>
-          <div class="tip" id="25">
+          <div class="tip" id="36">
             <strong>Signature:</strong> f:(&#39;T1 -&gt; &#39;T2 -&gt; &#39;U) -&gt; x:IDictionary&lt;&#39;Key,&#39;T1&gt; -&gt; y:IDictionary&lt;&#39;Key,&#39;T2&gt; -&gt; IDictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T1, 'T2, 'U, 'Key          </div>
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'U, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L403-403" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L67-67" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Creates a Dictionary value from a pair of Dictionaries, using a function to combine them.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
-            toIReadOnlyDictionary(source)
+          <code onmouseout="hideTip(event, '37', 37)" onmouseover="showTip(event, '37', 37)">
+            Dict.toIReadOnlyDictionary(source)
           </code>
-          <div class="tip" id="26">
-            <strong>Signature:</strong> source:IDictionary&lt;&#39;a,&#39;b&gt; -&gt; IReadOnlyDictionary&lt;&#39;a,&#39;b&gt;<br />
-                          <strong>Type parameters:</strong> 'a, 'b          </div>
+          <div class="tip" id="37">
+            <strong>Signature:</strong> source:IDictionary&lt;&#39;?25227,&#39;?25228&gt; -&gt; IReadOnlyDictionary&lt;&#39;?25227,&#39;?25228&gt;<br />
+                          <strong>Type parameters:</strong> '?25227, '?25228                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L387-387" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L13-13" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Converts an IDictionary to an IReadOnlyDictionary.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
-            tryGetValue(k dct)
+          <code onmouseout="hideTip(event, '38', 38)" onmouseover="showTip(event, '38', 38)">
+            Dict.tryGetValue k dct
           </code>
-          <div class="tip" id="27">
+          <div class="tip" id="38">
             <strong>Signature:</strong> k:&#39;Key -&gt; dct:IDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; &#39;Value option<br />
-                          <strong>Type parameters:</strong> 'Key, 'Value          </div>
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L389-389" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L24-24" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Tries to get the value of the given key.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '39', 39)" onmouseover="showTip(event, '39', 39)">
+            Dict.union source altSource
+          </code>
+          <div class="tip" id="39">
+            <strong>Signature:</strong> source:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; altSource:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IDictionary&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L112-112" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -144,36 +224,15 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
-            union(source altSource)
+          <code onmouseout="hideTip(event, '40', 40)" onmouseover="showTip(event, '40', 40)">
+            Dict.unionWith combiner source1 source2
           </code>
-          <div class="tip" id="28">
-            <strong>Signature:</strong> source:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; altSource:IDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IDictionary&lt;&#39;Key,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T          </div>
-        </td>
-        <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L443-443" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Returns the union of two dictionaries, preferring values from the first in case of duplicate keys.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
-            unionWith(combiner source1 source2)
-          </code>
-          <div class="tip" id="29">
+          <div class="tip" id="40">
             <strong>Signature:</strong> combiner:(&#39;Value -&gt; &#39;Value -&gt; &#39;Value) -&gt; source1:IDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; source2:IDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; IDictionary&lt;&#39;Key,&#39;Value&gt;<br />
-                          <strong>Type parameters:</strong> 'Value, 'Key          </div>
+                          <strong>Type parameters:</strong> 'Value, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L435-435" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L103-103" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
@@ -184,56 +243,57 @@
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
-            unzip(source)
+          <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
+            Dict.unzip(source)
           </code>
-          <div class="tip" id="30">
+          <div class="tip" id="41">
             <strong>Signature:</strong> source:IDictionary&lt;&#39;Key,(&#39;T1 * &#39;T2)&gt; -&gt; IDictionary&lt;&#39;Key,&#39;T1&gt; * IDictionary&lt;&#39;Key,&#39;T2&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L426-426" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L94-94" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Splits a dictionary with tuple pair values to two separate dictionaries.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
-            values(source)
+          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+            Dict.values(source)
           </code>
-          <div class="tip" id="31">
-            <strong>Signature:</strong> source:IDictionary&lt;&#39;?19542,&#39;?19543&gt; -&gt; seq&lt;&#39;?19543&gt;<br />
-                          <strong>Type parameters:</strong> '?19542, '?19543          </div>
+          <div class="tip" id="42">
+            <strong>Signature:</strong> source:IDictionary&lt;&#39;?25239,&#39;?25240&gt; -&gt; seq&lt;&#39;?25240&gt;<br />
+                          <strong>Type parameters:</strong> '?25239, '?25240                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L395-395" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L47-47" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Returns the values of the given dictionary.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
-            zip(x y)
+          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
+            Dict.zip x y
           </code>
-          <div class="tip" id="32">
+          <div class="tip" id="43">
             <strong>Signature:</strong> x:IDictionary&lt;&#39;Key,&#39;T1&gt; -&gt; y:IDictionary&lt;&#39;Key,&#39;T2&gt; -&gt; IDictionary&lt;&#39;Key,(&#39;T1 * &#39;T2)&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L418-418" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Dict.fs#L82-82" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Tuple values of two dictionaries.</p>
+          <p>Tuples values of two dictionaries.</p>
 
 
         </td>
@@ -258,6 +318,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>

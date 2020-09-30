@@ -33,11 +33,14 @@
         <div class="span9" id="main">
           
 
-
-
 <h1>IReadOnlyDictionary</h1>
 <p>
   <span>Namespace: FSharpPlus</span><br />
+        <span>
+          Attributes:<br />
+[&lt;RequireQualifiedAccess&gt;]<br />
+          
+      </span>
 </p>
 <div class="xmldoc">
 <p>Additional operations on IReadOnlyDictionary<'Key, 'Value></p>
@@ -54,186 +57,267 @@
     <tbody>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '69', 69)" onmouseover="showTip(event, '69', 69)">
-            add(key value table)
+          <code onmouseout="hideTip(event, '91', 91)" onmouseover="showTip(event, '91', 91)">
+            IReadOnlyDictionary.add key value table
           </code>
-          <div class="tip" id="69">
+          <div class="tip" id="91">
             <strong>Signature:</strong> key:&#39;Key -&gt; value:&#39;Value -&gt; table:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'Value          </div>
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L452-452" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L14-14" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Replaces or sets the item associated with a specified key with the specified value.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '70', 70)" onmouseover="showTip(event, '70', 70)">
-            keys(source)
+          <code onmouseout="hideTip(event, '92', 92)" onmouseover="showTip(event, '92', 92)">
+            IReadOnlyDictionary.containsKey k dct
           </code>
-          <div class="tip" id="70">
-            <strong>Signature:</strong> source:IReadOnlyDictionary&lt;&#39;?19575,&#39;?19576&gt; -&gt; seq&lt;&#39;?19575&gt;<br />
-                          <strong>Type parameters:</strong> '?19575, '?19576          </div>
+          <div class="tip" id="92">
+            <strong>Signature:</strong> k:&#39;Key -&gt; dct:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; bool<br />
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L459-459" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L38-38" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Does the read-only dictionary contain the given key?</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '71', 71)" onmouseover="showTip(event, '71', 71)">
-            map(f x)
+          <code onmouseout="hideTip(event, '93', 93)" onmouseover="showTip(event, '93', 93)">
+            IReadOnlyDictionary.intersect(...)
           </code>
-          <div class="tip" id="71">
+          <div class="tip" id="93">
+            <strong>Signature:</strong> source1:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; source2:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L140-140" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the intersection of two read-only dictionaries, preferring values from the first in case of duplicate keys.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '94', 94)" onmouseover="showTip(event, '94', 94)">
+            IReadOnlyDictionary.intersectWith(...)
+          </code>
+          <div class="tip" id="94">
+            <strong>Signature:</strong> combiner:(&#39;T -&gt; &#39;T -&gt; &#39;T) -&gt; source1:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; source2:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt;<br />
+                          <strong>Type parameters:</strong> 'T, 'Key                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L128-128" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the intersection of two read-only dictionaries, using the combiner function for duplicate keys.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '95', 95)" onmouseover="showTip(event, '95', 95)">
+            IReadOnlyDictionary.keys(source)
+          </code>
+          <div class="tip" id="95">
+            <strong>Signature:</strong> source:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; seq&lt;&#39;Key&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L44-44" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the keys of the given read-only dictionary.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '96', 96)" onmouseover="showTip(event, '96', 96)">
+            IReadOnlyDictionary.map f x
+          </code>
+          <div class="tip" id="96">
             <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U) -&gt; x:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'Key          </div>
+                          <strong>Type parameters:</strong> 'T, 'U, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L462-462" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L57-57" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Maps the given function over each value in the read-only dictionary.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '72', 72)" onmouseover="showTip(event, '72', 72)">
-            map2(f x y)
+          <code onmouseout="hideTip(event, '97', 97)" onmouseover="showTip(event, '97', 97)">
+            IReadOnlyDictionary.map2 f x y
           </code>
-          <div class="tip" id="72">
+          <div class="tip" id="97">
             <strong>Signature:</strong> f:(&#39;T1 -&gt; &#39;T2 -&gt; &#39;U) -&gt; x:IReadOnlyDictionary&lt;&#39;Key,&#39;T1&gt; -&gt; y:IReadOnlyDictionary&lt;&#39;Key,&#39;T2&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T1, 'T2, 'U, 'Key          </div>
+                          <strong>Type parameters:</strong> 'T1, 'T2, 'U, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L468-468" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L71-71" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Creates a read-only dictionary value from a pair of read-only dictionaries,
+using a function to combine them.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '73', 73)" onmouseover="showTip(event, '73', 73)">
-            tryGetValue(k dct)
+          <code onmouseout="hideTip(event, '98', 98)" onmouseover="showTip(event, '98', 98)">
+            IReadOnlyDictionary.remove key table
           </code>
-          <div class="tip" id="73">
+          <div class="tip" id="98">
+            <strong>Signature:</strong> key:&#39;Key -&gt; table:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L17-17" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Removes the given key from the read-only dictionary.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+          <code onmouseout="hideTip(event, '99', 99)" onmouseover="showTip(event, '99', 99)">
+            IReadOnlyDictionary.tryGetValue k dct
+          </code>
+          <div class="tip" id="99">
             <strong>Signature:</strong> k:&#39;Key -&gt; dct:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; &#39;Value option<br />
-                          <strong>Type parameters:</strong> 'Key, 'Value          </div>
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L454-454" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L27-27" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Tries to get the value of the given key.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '74', 74)" onmouseover="showTip(event, '74', 74)">
-            union(source altSource)
+          <code onmouseout="hideTip(event, '100', 100)" onmouseover="showTip(event, '100', 100)">
+            IReadOnlyDictionary.union(...)
           </code>
-          <div class="tip" id="74">
+          <div class="tip" id="100">
             <strong>Signature:</strong> source:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; altSource:IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L508-508" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L117-117" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Returns the union of two dictionaries, preferring values from the first in case of duplicate keys.</p>
+          <p>Returns the union of two read-only dictionaries, preferring values from the first in case of duplicate keys.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '75', 75)" onmouseover="showTip(event, '75', 75)">
-            unionWith(combiner source1 source2)
+          <code onmouseout="hideTip(event, '101', 101)" onmouseover="showTip(event, '101', 101)">
+            IReadOnlyDictionary.unionWith(...)
           </code>
-          <div class="tip" id="75">
+          <div class="tip" id="101">
             <strong>Signature:</strong> combiner:(&#39;Value -&gt; &#39;Value -&gt; &#39;Value) -&gt; source1:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; source2:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt;<br />
-                          <strong>Type parameters:</strong> 'Value, 'Key          </div>
+                          <strong>Type parameters:</strong> 'Value, 'Key                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L500-500" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L107-107" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Returns the union of two dictionaries, using the combiner function for duplicate keys.</p>
+          <p>Returns the union of two read-only dictionaries, using the combiner function for duplicate keys.</p>
 
 
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '76', 76)" onmouseover="showTip(event, '76', 76)">
-            unzip(source)
+          <code onmouseout="hideTip(event, '102', 102)" onmouseover="showTip(event, '102', 102)">
+            IReadOnlyDictionary.unzip(source)
           </code>
-          <div class="tip" id="76">
+          <div class="tip" id="102">
             <strong>Signature:</strong> source:IReadOnlyDictionary&lt;&#39;Key,(&#39;T1 * &#39;T2)&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;T1&gt; * IReadOnlyDictionary&lt;&#39;Key,&#39;T2&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L491-491" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L98-98" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Splits a read-only dictionary with tuple pair values to two separate read-only dictionaries.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '77', 77)" onmouseover="showTip(event, '77', 77)">
-            values(source)
+          <code onmouseout="hideTip(event, '103', 103)" onmouseover="showTip(event, '103', 103)">
+            IReadOnlyDictionary.values(source)
           </code>
-          <div class="tip" id="77">
-            <strong>Signature:</strong> source:IReadOnlyDictionary&lt;&#39;?19578,&#39;?19579&gt; -&gt; seq&lt;&#39;?19579&gt;<br />
-                          <strong>Type parameters:</strong> '?19578, '?19579          </div>
+          <div class="tip" id="103">
+            <strong>Signature:</strong> source:IReadOnlyDictionary&lt;&#39;Key,&#39;Value&gt; -&gt; seq&lt;&#39;Value&gt;<br />
+                          <strong>Type parameters:</strong> 'Key, 'Value                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L460-460" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L50-50" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Returns the values of the given read-only dictionary.</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
-
-          <code onmouseout="hideTip(event, '78', 78)" onmouseover="showTip(event, '78', 78)">
-            zip(x y)
+          <code onmouseout="hideTip(event, '104', 104)" onmouseover="showTip(event, '104', 104)">
+            IReadOnlyDictionary.zip x y
           </code>
-          <div class="tip" id="78">
+          <div class="tip" id="104">
             <strong>Signature:</strong> x:IReadOnlyDictionary&lt;&#39;Key,&#39;T1&gt; -&gt; y:IReadOnlyDictionary&lt;&#39;Key,&#39;T2&gt; -&gt; IReadOnlyDictionary&lt;&#39;Key,(&#39;T1 * &#39;T2)&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2          </div>
+                          <strong>Type parameters:</strong> 'Key, 'T1, 'T2                      </div>
         </td>
         <td class="xmldoc">
-            <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions.fs#L483-483" class="github-link">
+                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/IReadOnlyDictionary.fs#L86-86" class="github-link">
               <img src="../content/img/github.png" class="normal" />
               <img src="../content/img/github-blue.png" class="hover" />
             </a>
-          <p>Tuple values of two dictionaries.</p>
+          <p>Tuples values of two read-only dictionaries.</p>
 
 
         </td>
@@ -258,6 +342,7 @@
 
 		  <li class="nav-header">Documentation</li>
 		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
 		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
 		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
 		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>
